@@ -1,0 +1,22 @@
+---
+// Props para el componente
+const { isLoading, text, loadingText, onClick } = Astro.props;
+---
+
+<button
+  class="w-full text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-center"
+  type="button"
+  disabled={isLoading}
+  onclick={onClick}
+>
+  {isLoading ? (
+    <>
+      <svg aria-hidden="true" role="status" class="inline mr-3 w-4 h-4 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- SVG path aquí -->
+      </svg>
+      {loadingText || 'Loading...'}
+    </>
+  ) : (
+    text || 'Submit'
+  )}
+</button>
