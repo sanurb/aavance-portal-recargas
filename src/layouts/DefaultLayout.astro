@@ -47,6 +47,6 @@ let subtitle = "Recarga con PSE";
 	const isLoggedIn = await localStorage.getItem("isLoggedIn");
 
 	if (isLoggedIn === null) {
-		window.location.href = "/login";
+		Astro.redirect('/login');
 	}
 </script>
