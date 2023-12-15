@@ -5,7 +5,7 @@
 		>
 			<a class="flex items-center space-x-3 rtl:space-x-reverse">
 				<img
-					src="/logo.png"
+					src="../../public/logo.png"
 					class="h-8"
 					alt="AAvance Logo"
 				/>
@@ -47,7 +47,7 @@
 			localStorage.removeItem("pin");
             localStorage.removeItem("verificationCode");
 			// Redirect to login or home page after logout
-			window.location.href = "/";
+			window.location.replace("./login");
 		});
 	}
 </script>

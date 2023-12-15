@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://sanurb.github.io',
-  base: '/aavance-portal-recargas',
+  base: '/aavance-portal-recargas'
 });

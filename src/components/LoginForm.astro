@@ -153,8 +153,8 @@ import { Icon } from "astro-icon";
 				localStorage.setItem("pin", pinInput.value);
 				localStorage.setItem("isLoggedIn", "true");
 
-				// Redirect to password entry screen
-				Astro.redirect("/enter-password");
+				// Redirect to password entry screen using replace
+				window.location.replace("./enter-password");
 			} else {
 				// Display error notification
 				notification.style.display = "flex";
