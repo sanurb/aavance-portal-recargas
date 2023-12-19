@@ -44,7 +44,8 @@ let subtitle = "Recarga con PSE";
 	const isLoggedIn = await localStorage.getItem("isLoggedIn");
 
 	if (isLoggedIn === null) {
-		const loginPath = "../login";
-		window.location.replace(`${loginPath}`);
+		const currentPath = window.location.pathname;
+		const loginPath = "/login";
+		window.location.replace(`${currentPath}${loginPath}`);
 	}
 </script>
