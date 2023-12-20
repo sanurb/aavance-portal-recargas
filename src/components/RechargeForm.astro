@@ -81,10 +81,10 @@
 
     const recargarButton = document.querySelector('.recargar-button');
     recargarButton.addEventListener('click', (e) => {
-        // if (!document.getElementById('amount').checkValidity()) {
-        //     e.preventDefault();
-        //     return;
-        // }
+        if (!document.getElementById('amount').checkValidity()) {
+            e.preventDefault();
+            return;
+        }
         const phone = document.getElementById('phone-number').value;
         const bank_code = document.getElementById('bank_code').value;
         const amount = document.getElementById('amount').value.replace(/\D/g, '');
