@@ -1,10 +1,10 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],
-  site: 'https://sanurb.github.io',
-  base: '/aavance-portal-recargas'
+	integrations: [tailwind()],
+	site: "https://sanurb.github.io",
+	base: "/aavance-portal-recargas",
 });
